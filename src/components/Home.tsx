@@ -8,7 +8,7 @@ const ProfilePhoto = styled.div`
 
 const MainWrapper = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     @media (max-width:750px) {
         flex-direction: column;
         justify-content: center;
@@ -41,7 +41,7 @@ export default function Home(){
     return (
         <>
             <MainWrapper>
-                <ProfilePhoto><ProfileImg id="profile" src="/profile.jpg" ></ProfileImg></ProfilePhoto>
+                <ProfilePhoto><ProfileImg src="/profile.jpg" alt="profile" ></ProfileImg></ProfilePhoto>
                     <TextLayer>
                         <p>
                             My name is Andrew Cho,

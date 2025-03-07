@@ -16,7 +16,7 @@ const PageWrapper = styled.div`
     width: 80vw;
     margin: 0 auto;
     background-color: #262626;
-    
+    height: 100vh;
 `;
 
 
@@ -49,7 +49,9 @@ const MainText = styled.div`
     }
 `;
 
-const FooterWrapper = styled.div`
+const FooterWrapper = styled.footer`
+    width: 80vw;
+    margin: 0 auto;
     color: whitesmoke;
     flex-direction: row;
     justify-content: space-evenly;
@@ -57,6 +59,7 @@ const FooterWrapper = styled.div`
 `;
 
 const NavCheck = styled.div`
+    height:40%;
     width: 30%;
     @media (max-width: 750px) {
         width: auto;
@@ -96,15 +99,13 @@ export function App(){
                 </MainWrapper>
 
 
-                <FooterWrapper>
 
-                    <BrowserRouter>
-                        All Rights Reserved by Andrew Cho<Credits />  &copy;
-                    </BrowserRouter>
-                    {/*<Routes><Route path="/Credits" element = {<Credits/>}/></Routes>*/}
-                </FooterWrapper>
+
 
             </PageWrapper>
+            <BrowserRouter>
+                <FooterWrapper>Rights Reserved by Andrew Cho<Credits />  &copy;</FooterWrapper>
+            </BrowserRouter>
         </>
     )
 }

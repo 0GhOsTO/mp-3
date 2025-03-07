@@ -4,13 +4,23 @@ import {useState} from 'react';
 
 
 const ImageUl = styled.ul`
-    width: 80%;
+    width: 100%;
     list-style:none;
+    justify-items: center;
+    padding-left: 0;
+    padding: 10vh;
 `;
+
 
 const ImageConv = styled.li`
     display: flex;
     width: 100%;
+    text-align: center;
+    justify-content: center;
+`;
+
+const HCenter = styled.h1`
+    text-align: center;
 `;
 
 const CalcStyle = styled.div<{$neg: boolean}>(props =>`
@@ -116,11 +126,11 @@ export default function Project(){
     return (
         <>
             <ImageUl>
-                <li id="photoLi"><img id="gitHub" src="/githubIcon.jpeg" style={{width: "100%"}} ></img></li>
+                <ImageConv><img id="gitHub" src="/githubIcon.jpeg" alt = "gitHub" style={{width: "100%"}} ></img></ImageConv>
                 <ImageConv id="wordLi" onClick={() => window.open("https://github.com/0GhOsTO/Final_Project", "_blank")}>Github</ImageConv>
             </ImageUl>
 
-                <h1> Calculator </h1>
+                <HCenter> Calculator </HCenter>
                 <CalcStyle $neg={color}>
                     <InputStyle value = {firstNum}
                            onChange={(e) => setFirstNum(e.target.value)}/>
