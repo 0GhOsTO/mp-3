@@ -17,6 +17,7 @@ const PageWrapper = styled.div`
     margin: 0 auto;
     background-color: #262626;
     height: 100vh;
+    flex: 1;
 `;
 
 
@@ -44,11 +45,17 @@ const MainText = styled.div`
     color: #D9E5E5;
     font-family: 'Sans Serif Collection', sans-serif;
     align-items: center;
+    padding: 5%;
     @media(max-width: 750px) {
         width: 100%;
     }
 `;
 
+const AppWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+`;
 const FooterWrapper = styled.footer`
     width: 80vw;
     margin: 0 auto;
@@ -72,6 +79,7 @@ export function App(){
     document.title = "Home | Resume";
     return(
         <>
+            <AppWrapper>
             <PageWrapper>
                 <Header/>
                 <MainWrapper>
@@ -106,6 +114,7 @@ export function App(){
             <BrowserRouter>
                 <FooterWrapper>Rights Reserved by Andrew Cho<Credits />  &copy;</FooterWrapper>
             </BrowserRouter>
+            </AppWrapper>
         </>
     )
 }

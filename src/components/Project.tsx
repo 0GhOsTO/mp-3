@@ -21,6 +21,7 @@ const ImageConv = styled.li`
 
 const HCenter = styled.h1`
     text-align: center;
+    font-size: calc(10px + 2vmin);
 `;
 
 const CalcStyle = styled.div<{$neg: boolean}>(props =>`
