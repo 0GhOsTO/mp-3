@@ -17,7 +17,7 @@ const CalcStyle = styled.div<{$neg: boolean}>(props =>`
     
     @font-face {
         font-family: calcFont;
-        src: url("/public/calculatorFont.ttf");
+        src: url("/calculatorFont.ttf");
     }
     font-family: calcFont;
     max-width: 100%;
