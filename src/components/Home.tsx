@@ -41,7 +41,7 @@ export default function Home(){
     return (
         <>
             <MainWrapper>
-                <ProfilePhoto><ProfileImg id="profile" src="/public/profile.jpg" ></ProfileImg></ProfilePhoto>
+                <ProfilePhoto><ProfileImg id="profile" src="/profile.jpg" ></ProfileImg></ProfilePhoto>
                     <TextLayer>
                         <p>
                             My name is Andrew Cho,
